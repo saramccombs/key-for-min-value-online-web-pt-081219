@@ -20,6 +20,7 @@ def key_for_min_value(name_hash)
     #iterate through the hash using collect 
     #compare the value of the stored key to the next value in the hash
     #retain whatever value is smallest 
+    name_hash.collect
     
     name_hash.collect do |name_key, name_value|
       if value < name_value ? 

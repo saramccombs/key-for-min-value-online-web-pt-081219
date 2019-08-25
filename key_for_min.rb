@@ -14,9 +14,6 @@ def key_for_min_value(name_hash)
   hash_key = nil
   hash_value = nil
   
-  if name_hash.empty?
-    return nil
-  else
     #store the first key in the hash to a return variable 
     #iterate through the hash using collect 
     #compare the value of the stored key to the next value in the hash

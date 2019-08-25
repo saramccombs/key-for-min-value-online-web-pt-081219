@@ -18,6 +18,7 @@ def key_for_min_value(name_hash)
   name_hash.each do |key, value|
     binding.pry 
     if lowest_hash_value == nil || value < lowest_hash_value
+      binding.pry
       lowest_hash_value = value
       lowest_hash_key = key 
     end

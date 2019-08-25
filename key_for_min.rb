@@ -22,7 +22,8 @@ def key_for_min_value(name_hash)
     value = name_hash.first[1]
     
     name_hash.collect do |name_key, name_value|
-      if value > name_value ? value = name_value && key = name_key
+      if value > name_value 
+        value = name_value && key = name_key
     end
     return key
   end

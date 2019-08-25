@@ -9,7 +9,7 @@
 
 
 
-def key_for_min_value(name_hash)
+def key_for_min_value(ikea)
   
   lowest_hash_key = nil
   lowest_hash_value = nil

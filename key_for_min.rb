@@ -1,3 +1,4 @@
+require ''
 # prereqs: iterators, hashes, conditional logic
 # Given a hash with numeric values, return the key for the smallest value
 
@@ -15,6 +16,7 @@ def key_for_min_value(name_hash)
   lowest_hash_value = nil
   
   name_hash.each do |key, value|
+    binding.pry 
     if lowest_hash_value == nil || value < lowest_hash_value
       lowest_hash_value = value
       lowest_hash_key = key 

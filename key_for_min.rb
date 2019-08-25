@@ -14,15 +14,8 @@ def key_for_min_value(name_hash)
   hash_key = nil
   hash_value = nil
   
-    #store the first key in the hash to a return variable 
-    #iterate through the hash using collect 
-    #compare the value of the stored key to the next value in the hash
-    #retain whatever value is smallest 
-    hash_key = name_hash.first[0]
-    hash_value = name_hash.first[1]
-    
-    name_hash.collect do |name_key, name_value|
-      if hash_value > name_value 
+  name_hash.each do |name, value|
+      if hash_value > value 
         hash_value = name_value && hash_key = name_key
       end
     end
